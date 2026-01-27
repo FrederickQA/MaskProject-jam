@@ -90,6 +90,10 @@ public class EnemyChaseSimple2D : MonoBehaviour
     // detener movimiento
     rb.linearVelocity = Vector2.zero;
 
+    // hit stop
+    if (HitStop.Instance != null)
+    HitStop.Instance.Stop(0.05f);
+
     // flash rojo
     if (spriteRenderer != null)
     {
