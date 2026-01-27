@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5055459942475874455}
   - component: {fileID: 4159234436028065590}
   - component: {fileID: 5981287153802146998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,3 +184,5 @@ MonoBehaviour:
   moveSpeed: 5
   spriteRenderer: {fileID: 0}
   deadSprite: {fileID: 21300000, guid: 3418263c79eccbe4ea04806a24a2bc74, type: 3}
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.08

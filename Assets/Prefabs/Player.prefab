@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 378563704223043150}
   - component: {fileID: 8157405863038173508}
   - component: {fileID: 2394759508894215938}
+  - component: {fileID: 2252866233707216637}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -200,3 +201,15 @@ MonoBehaviour:
   facesRightByDefault: 1
   deadzone: 0.05
   useScaleFlip: 0
+--- !u!114 &2252866233707216637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728429381860812611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472a32b08ce8b0241a635d6ec0e143a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyClickKiller2D

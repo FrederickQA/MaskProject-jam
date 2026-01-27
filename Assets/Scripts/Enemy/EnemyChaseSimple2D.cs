@@ -68,10 +68,15 @@ public class EnemyChaseSimple2D : MonoBehaviour
 
         if (collision.collider.CompareTag("Player"))
         {
-            Die();
+            Kill();
         }
     }
-
+    public void Kill()
+    {
+    if (dead) return;
+    dead = true;
+    StartCoroutine(DieRoutine());
+    }
     private void Die()
     {
     dead = true;
