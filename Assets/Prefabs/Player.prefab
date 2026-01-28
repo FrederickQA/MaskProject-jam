@@ -84,14 +84,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: c0f55e89e0919ba408fc7727cd4fc31b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 12.016449, y: 20.171875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -157,17 +157,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.36127472, y: -5.6464815}
+  m_Offset: {x: 0.36127472, y: -7.779044}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 12.016449, y: 20.171875}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 12.016449, y: 20.171875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.173067, y: 8.487551}
+  m_Size: {x: 4.173067, y: 4.222426}
   m_EdgeRadius: 0
 --- !u!114 &8157405863038173508
 MonoBehaviour:
@@ -213,3 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472a32b08ce8b0241a635d6ec0e143a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyClickKiller2D
+  cam: {fileID: 0}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 0
+  clickRadius: 0.12
