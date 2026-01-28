@@ -2,42 +2,39 @@ using UnityEngine;
 
 public class MirrorReflection2D : MonoBehaviour
 {
+    [Header("Refs")]
     [SerializeField] private Transform player;
     [SerializeField] private Transform mirrorCopy;
-
-    // Punto por donde pasa el “plano” del espejo (un Transform vacío)
     [SerializeField] private Transform mirrorPlane;
 
+    [Header("Renderers")]
     [SerializeField] private SpriteRenderer playerRenderer;
     [SerializeField] private SpriteRenderer mirrorRenderer;
 
-    private void Awake()
-    {
-        if (playerRenderer == null && player != null)
-            playerRenderer = player.GetComponentInChildren<SpriteRenderer>();
+    [Header("Mirror options")]
+    [SerializeField] private bool invertFlipX = true;
 
-        if (mirrorRenderer == null && mirrorCopy != null)
-            mirrorRenderer = mirrorCopy.GetComponentInChildren<SpriteRenderer>();
-    }
-
-    private void LateUpdate()
+    void LateUpdate()
     {
         if (player == null || mirrorCopy == null || mirrorPlane == null) return;
-        if (playerRenderer == null || mirrorRenderer == null) return;
 
-        // Copiar sprite actual (y color si querés)
-        mirrorRenderer.sprite = playerRenderer.sprite;
-        mirrorRenderer.color = playerRenderer.color;
+        // --- POSICION REFLEJADA ---
+        Vector2 p = player.position;
+        Vector2 p0 = mirrorPlane.position;
 
-        // Reflejo en X respecto a mirrorPlane.position.x
-        Vector3 p = player.position;
-        float dx = p.x - mirrorPlane.position.x;
-        Vector3 reflected = new Vector3(mirrorPlane.position.x - dx, p.y, mirrorCopy.position.z);
+        Vector2 n = (Vector2)mirrorPlane.up;
+        n.Normalize();
 
-        mirrorCopy.position = reflected;
+        Vector2 v = p - p0;
+        Vector2 reflected = p - 2f * Vector2.Dot(v, n) * n;
 
-        // Mantener el mismo "flip" que el player pero invertido (porque espejo)
-        mirrorRenderer.flipX = !playerRenderer.flipX;
-        mirrorRenderer.flipY = playerRenderer.flipY;
+        mirrorCopy.position = new Vector3(reflected.x, reflected.y, mirrorCopy.position.z);
+
+        // --- FLIP ---
+        if (playerRenderer != null && mirrorRenderer != null)
+        {
+            bool px = playerRenderer.flipX;
+            mirrorRenderer.flipX = invertFlipX ? !px : px;
+        }
     }
 }

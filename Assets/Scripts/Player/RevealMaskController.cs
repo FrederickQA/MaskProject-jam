@@ -2,40 +2,41 @@ using UnityEngine;
 
 public class RevealMaskController : MonoBehaviour
 {
+    [Header("Refs")]
     [SerializeField] private Camera cam;
-    [SerializeField] private GameObject revealMaskObject; // el GO del SpriteMask
-    [SerializeField] private Transform revealMaskTransform;
+    [SerializeField] private Transform revealMask;          // el GameObject del RevealMask (SpriteMask)
+    [SerializeField] private SpriteRenderer playerMirror;   // PjTrim SpriteRenderer
 
-    private void Awake()
+    [Header("Settings")]
+    [SerializeField] private bool hideMirrorWhileRevealing = true;
+
+    void Awake()
     {
         if (cam == null) cam = Camera.main;
 
-        if (revealMaskObject != null && revealMaskTransform == null)
-            revealMaskTransform = revealMaskObject.transform;
-
-        if (revealMaskObject != null)
-            revealMaskObject.SetActive(false);
+        // Estado inicial
+        if (revealMask != null) revealMask.gameObject.SetActive(false);
+        if (playerMirror != null) playerMirror.enabled = true;
     }
 
-    private void Update()
+    void Update()
     {
-        if (cam == null || revealMaskObject == null || revealMaskTransform == null) return;
+        if (cam == null || revealMask == null) return;
 
-        bool holding = Input.GetMouseButton(1); // click derecho
+        bool rmb = Input.GetMouseButton(1);
 
-        if (holding && !revealMaskObject.activeSelf)
-            revealMaskObject.SetActive(true);
+        // Toggle de estados
+        revealMask.gameObject.SetActive(rmb);
 
-        if (!holding && revealMaskObject.activeSelf)
-            revealMaskObject.SetActive(false);
+        if (playerMirror != null && hideMirrorWhileRevealing)
+            playerMirror.enabled = !rmb;
 
-        if (!holding) return;
-
-        Vector3 mp = Input.mousePosition;
-        mp.z = -cam.transform.position.z;
-        Vector3 world = cam.ScreenToWorldPoint(mp);
-        world.z = 0f;
-
-        revealMaskTransform.position = world;
+        // Mover máscara al mouse mientras RMB
+        if (rmb)
+        {
+            Vector3 mw = cam.ScreenToWorldPoint(Input.mousePosition);
+            mw.z = revealMask.position.z;
+            revealMask.position = mw;
+        }
     }
 }
