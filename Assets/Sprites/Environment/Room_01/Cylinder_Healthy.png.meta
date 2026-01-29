@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: d6d19641203abcc4bb1159a3ad1ef715
+guid: 948516d794d09054b9e73d56416f256b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2239715145798933198
-    second: Camara_Rota_Lineas_0
-  - first:
-      213: 945284354436010563
-    second: Camara_Rota_Lineas_1
-  - first:
-      213: -2974804412190496129
-    second: Camara_Rota_Lineas_2
-  - first:
-      213: -6372932360900400377
-    second: Camara_Rota_Lineas_3
+      213: -7073492043227401755
+    second: Camara_Color_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Camara_Rota_Lineas_0
+      name: Camara_Color_0
       rect:
         serializedVersion: 2
-        x: 1670
-        y: 980
-        width: 349
-        height: 442
+        x: 1658
+        y: 670
+        width: 361
+        height: 753
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 235a79001feeae0e0800000000000000
-      internalID: -2239715145798933198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Camara_Rota_Lineas_1
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 1254
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34294edac135e1d00800000000000000
-      internalID: 945284354436010563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Camara_Rota_Lineas_2
-      rect:
-        serializedVersion: 2
-        x: 1501
-        y: 603
-        width: 1252
-        height: 522
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7aee17f52f57b6d0800000000000000
-      internalID: -2974804412190496129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Camara_Rota_Lineas_3
-      rect:
-        serializedVersion: 2
-        x: 1765
-        y: 573
-        width: 39
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70ba0f278cbce87a0800000000000000
-      internalID: -6372932360900400377
+      spriteID: 5e1f0e1b678e5dd90800000000000000
+      internalID: -7073492043227401755
       vertices: []
       indices: 
       edges: []
@@ -213,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Camara_Rota_Lineas_0: -2239715145798933198
-      Camara_Rota_Lineas_1: 945284354436010563
-      Camara_Rota_Lineas_2: -2974804412190496129
-      Camara_Rota_Lineas_3: -6372932360900400377
+      Camara_Color_0: -7073492043227401755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

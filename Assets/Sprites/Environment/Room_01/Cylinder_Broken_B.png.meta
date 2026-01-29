@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 7bfbdbf2818fe784faded7b96626cdde
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5528388479766082402
+    second: Camara_Rota_Color_0
+  - first:
+      213: 473147189202520357
+    second: Camara_Rota_Color_1
+  - first:
+      213: 6493066813423667517
+    second: Camara_Rota_Color_2
+  - first:
+      213: -5663417224344883516
+    second: Camara_Rota_Color_3
+  - first:
+      213: -8791184427560768814
+    second: Camara_Rota_Color_4
+  - first:
+      213: -8751512385929388030
+    second: Camara_Rota_Color_5
+  - first:
+      213: -716011441596565892
+    second: Camara_Rota_Color_6
+  - first:
+      213: -8868184234787129003
+    second: Camara_Rota_Color_7
+  - first:
+      213: 6684547116637419943
+    second: Camara_Rota_Color_8
+  - first:
+      213: -8344302911143345757
+    second: Camara_Rota_Color_9
+  - first:
+      213: 1197187934668218020
+    second: Camara_Rota_Color_10
+  - first:
+      213: -6991559095340625999
+    second: Camara_Rota_Color_11
+  - first:
+      213: 3814436845259579679
+    second: Camara_Rota_Color_12
+  - first:
+      213: -1844165150686627946
+    second: Camara_Rota_Color_13
+  - first:
+      213: -4245383589109412057
+    second: Camara_Rota_Color_14
+  - first:
+      213: 6149492611303458722
+    second: Camara_Rota_Color_15
+  - first:
+      213: 2773971856638012096
+    second: Camara_Rota_Color_16
+  - first:
+      213: -8377735382280271396
+    second: Camara_Rota_Color_17
+  - first:
+      213: -8244835197190342727
+    second: Camara_Rota_Color_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Camara_Rota_Color_0
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 673
+        width: 352
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c4e23e7f73743b0800000000000000
+      internalID: -5528388479766082402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_1
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1066
+        width: 95
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52904ea9cd4f09600800000000000000
+      internalID: 473147189202520357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_2
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1160
+        width: 339
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39cef47dd10c1a50800000000000000
+      internalID: 6493066813423667517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_3
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 833
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce28106a008761b0800000000000000
+      internalID: -5663417224344883516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_4
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 848
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da6b4047507ff580800000000000000
+      internalID: -8791184427560768814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_5
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 799
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2006f3d3ad16c8680800000000000000
+      internalID: -8751512385929388030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_6
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 809
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76758033673016f0800000000000000
+      internalID: -716011441596565892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_7
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 754
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5593bc29c61ede480800000000000000
+      internalID: -8868184234787129003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_8
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 748
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9f883bf2844cc50800000000000000
+      internalID: 6684547116637419943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_9
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 772
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a10b0b56b4133c80800000000000000
+      internalID: -8344302911143345757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_10
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 734
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae584765144d9010800000000000000
+      internalID: 1197187934668218020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_11
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 730
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf0210bb0ef8fe90800000000000000
+      internalID: -6991559095340625999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_12
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 686
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11ebdbd91a9fe430800000000000000
+      internalID: 3814436845259579679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_13
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 638
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6973b26f0953866e0800000000000000
+      internalID: -1844165150686627946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_14
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 646
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f4cd36e1e5515c0800000000000000
+      internalID: -4245383589109412057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_15
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 668
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c1a5d2f2675550800000000000000
+      internalID: 6149492611303458722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_16
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 660
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cae6dbd4b02f7620800000000000000
+      internalID: 2773971856638012096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_17
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 647
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd986f49e0e4cbb80800000000000000
+      internalID: -8377735382280271396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camara_Rota_Color_18
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 577
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7f4d73216749d80800000000000000
+      internalID: -8244835197190342727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Camara_Rota_Color_0: -5528388479766082402
+      Camara_Rota_Color_1: 473147189202520357
+      Camara_Rota_Color_10: 1197187934668218020
+      Camara_Rota_Color_11: -6991559095340625999
+      Camara_Rota_Color_12: 3814436845259579679
+      Camara_Rota_Color_13: -1844165150686627946
+      Camara_Rota_Color_14: -4245383589109412057
+      Camara_Rota_Color_15: 6149492611303458722
+      Camara_Rota_Color_16: 2773971856638012096
+      Camara_Rota_Color_17: -8377735382280271396
+      Camara_Rota_Color_18: -8244835197190342727
+      Camara_Rota_Color_2: 6493066813423667517
+      Camara_Rota_Color_3: -5663417224344883516
+      Camara_Rota_Color_4: -8791184427560768814
+      Camara_Rota_Color_5: -8751512385929388030
+      Camara_Rota_Color_6: -716011441596565892
+      Camara_Rota_Color_7: -8868184234787129003
+      Camara_Rota_Color_8: 6684547116637419943
+      Camara_Rota_Color_9: -8344302911143345757
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

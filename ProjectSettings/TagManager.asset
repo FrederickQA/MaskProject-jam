@@ -18,7 +18,7 @@ TagManager:
   - BG
   - Mirror
   - FX
-  - 
+  - Player
   - 
   - 
   - 
@@ -47,6 +47,12 @@ TagManager:
     locked: 0
   - name: Mirror
     uniqueID: 430441313
+    locked: 0
+  - name: Player
+    uniqueID: 857393199
+    locked: 0
+  - name: UI
+    uniqueID: 2603860807
     locked: 0
   m_RenderingLayers:
   - Default
