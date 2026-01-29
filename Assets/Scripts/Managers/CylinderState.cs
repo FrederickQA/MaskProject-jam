@@ -2,51 +2,52 @@ using UnityEngine;
 
 public class CylinderState : MonoBehaviour
 {
-    [SerializeField] private Canvas menuCanvas;
+    [SerializeField] private MenuPowerController powerController;
 
     [Header("Cylinder Layers")]
     [SerializeField] private GameObject healthyLayer;
     [SerializeField] private GameObject brokenLayerA;
     [SerializeField] private GameObject brokenLayerB;
 
-    [Header("Other Broken Visuals (menu OFF)")]
+    [Header("Other Broken Visuals")]
     [SerializeField] private GameObject[] brokenExtras;
 
-    private bool wasMenuActive;
-
-    private void Start()
+    private void Awake()
     {
-        if (menuCanvas == null) return;
-        wasMenuActive = menuCanvas.enabled;
-        ApplyState(wasMenuActive);
+        ApplyHealthy();
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        if (menuCanvas == null) return;
-
-        bool isMenuActive = menuCanvas.enabled;
-        if (isMenuActive == wasMenuActive) return;
-
-        ApplyState(isMenuActive);
-        wasMenuActive = isMenuActive;
+        if (powerController != null)
+            powerController.OnGameStart += ApplyBroken;
     }
 
-    private void ApplyState(bool menuActive)
+    private void OnDisable()
     {
-        if (healthyLayer != null) healthyLayer.SetActive(menuActive);
+        if (powerController != null)
+            powerController.OnGameStart -= ApplyBroken;
+    }
 
-        bool broken = !menuActive;
-        if (brokenLayerA != null) brokenLayerA.SetActive(broken);
-        if (brokenLayerB != null) brokenLayerB.SetActive(broken);
+    private void ApplyHealthy()
+    {
+        if (healthyLayer != null) healthyLayer.SetActive(true);
+        if (brokenLayerA != null) brokenLayerA.SetActive(false);
+        if (brokenLayerB != null) brokenLayerB.SetActive(false);
 
         if (brokenExtras != null)
-        {
-            for (int i = 0; i < brokenExtras.Length; i++)
-            {
-                if (brokenExtras[i] != null)
-                    brokenExtras[i].SetActive(broken);
-            }
-        }
+            foreach (var go in brokenExtras)
+                if (go != null) go.SetActive(false);
+    }
+
+    private void ApplyBroken()
+    {
+        if (healthyLayer != null) healthyLayer.SetActive(false);
+        if (brokenLayerA != null) brokenLayerA.SetActive(true);
+        if (brokenLayerB != null) brokenLayerB.SetActive(true);
+
+        if (brokenExtras != null)
+            foreach (var go in brokenExtras)
+                if (go != null) go.SetActive(true);
     }
 }

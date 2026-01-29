@@ -3,65 +3,64 @@ using UnityEngine;
 public class PlayerMenuSprite : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private Canvas menuCanvas;
+    [SerializeField] private MenuPowerController powerController; // en vez de Canvas
     [SerializeField] private SpriteRenderer playerRenderer;
     [SerializeField] private Collider2D playerCollider;
 
+    [Header("Movement")]
+    [SerializeField] private MonoBehaviour playerMovement; // arrastrá PlayerMovement2D acá
+
     [Header("Mirror")]
-    [SerializeField] private GameObject mirrorRoot; // PlayerMirror (PADRE)
+    [SerializeField] private GameObject mirrorRoot;
 
     [Header("Sprites")]
-    [SerializeField] private Sprite menuSprite;   // Feto
-    [SerializeField] private Sprite gameSprite;   // Player normal
+    [SerializeField] private Sprite menuSprite;
+    [SerializeField] private Sprite gameSprite;
 
     [Header("Scale")]
     [SerializeField] private Vector3 menuScale = new Vector3(1.6f, 1.6f, 1f);
     [SerializeField] private Vector3 gameScale = Vector3.one;
 
-    private bool lastMenuState;
-
     private void Awake()
     {
-        if (playerRenderer == null)
-            playerRenderer = GetComponent<SpriteRenderer>();
+        if (playerRenderer == null) playerRenderer = GetComponent<SpriteRenderer>();
+        if (playerCollider == null) playerCollider = GetComponent<Collider2D>();
+    }
 
-        if (playerCollider == null)
-            playerCollider = GetComponent<Collider2D>();
+    private void OnEnable()
+    {
+        if (powerController != null) powerController.OnGameStart += HandleGameStart;
+    }
+
+    private void OnDisable()
+    {
+        if (powerController != null) powerController.OnGameStart -= HandleGameStart;
     }
 
     private void Start()
     {
-        if (menuCanvas == null) return;
-
-        lastMenuState = menuCanvas.enabled;
-        ApplyState(lastMenuState);
+        // Estado inicial: estamos en menú
+        ApplyMenuState(true);
     }
 
-    private void Update()
+    private void HandleGameStart()
     {
-        if (menuCanvas == null) return;
-
-        bool menuActive = menuCanvas.enabled;
-        if (menuActive == lastMenuState) return;
-
-        ApplyState(menuActive);
-        lastMenuState = menuActive;
+        ApplyMenuState(false);
     }
 
-    private void ApplyState(bool menuActive)
+    private void ApplyMenuState(bool menuActive)
     {
-        // Sprite del jugador
         if (playerRenderer != null)
             playerRenderer.sprite = menuActive ? menuSprite : gameSprite;
 
-        // Escala
         transform.localScale = menuActive ? menuScale : gameScale;
 
-        // Collider
         if (playerCollider != null)
             playerCollider.enabled = !menuActive;
 
-        // ESPEJO COMPLETO
+        if (playerMovement != null)
+            playerMovement.enabled = !menuActive;
+
         if (mirrorRoot != null)
             mirrorRoot.SetActive(!menuActive);
     }
