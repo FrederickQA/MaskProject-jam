@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0f55e89e0919ba408fc7727cd4fc31b
+guid: a9aab147f0d266348a93b9934a4d39d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3688068118528598168
-    second: PjsTrim_0
+      213: 1344780287051860636
+    second: enemy2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +49,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5082659, y: 0.49507633}
-  spritePixelsToUnits: 64
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PjsTrim_0
+      name: enemy2_0
       rect:
         serializedVersion: 2
-        x: 235
-        y: 20
-        width: 329
-        height: 932
+        x: 0
+        y: 0
+        width: 238
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86fd8af169951dcc0800000000000000
-      internalID: -3688068118528598168
+      spriteID: c9a8caecb8e99a210800000000000000
+      internalID: 1344780287051860636
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9f651c1bd6c050644a809c38bb0a6371
-    internalID: 971782439
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PjsTrim_0: -3688068118528598168
+      enemy2_0: 1344780287051860636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

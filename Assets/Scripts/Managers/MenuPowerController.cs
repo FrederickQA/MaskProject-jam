@@ -15,10 +15,16 @@ public class MenuPowerController : MonoBehaviour
     [SerializeField] private GameObject whiteLightRoot;    // WhiteLightRoot
     [SerializeField] private GameObject emergencyLightRoot;// EmergencyLightRoot
     [SerializeField] private AudioSource generatorLoop;    // audio del generador
+    [SerializeField] private AudioSource tubeHumLoop; // zumbido de tubos
+
     [SerializeField] private GameObject leverRoot;              // para desactivar el lever una vez arrancó
+
+    [Header("Emergency Delay")]
+    [SerializeField] private float emergencyLightsDelay = 2f;
 
     // Llamado cuando pasás a Emergency por primera vez
     public event Action OnGameStart;
+    public event Action<PowerState> OnStateChanged;
 
     private bool gameStarted;
 
@@ -38,10 +44,31 @@ public class MenuPowerController : MonoBehaviour
             // SetState(PowerState.PowerOff);
         }
     }
+    private void SetGenerator(bool on)
+    {
+    if (!generatorLoop) return;
 
+    generatorLoop.loop = true;
+
+    if (on)
+    {
+        if (!generatorLoop.isPlaying)
+        {
+            generatorLoop.time = 0f;          // opcional: arrancar desde el inicio
+            generatorLoop.volume = 0.3f;      // si querés forzar volumen
+            generatorLoop.Play();
+        }
+    }
+    else
+    {
+        if (generatorLoop.isPlaying)
+            generatorLoop.Stop();
+    }
+    }
     private void SetState(PowerState newState, bool applyStart = false)
     {
         CurrentState = newState;
+        OnStateChanged?.Invoke(newState);
 
         // Boot: luz blanca + gen + menu
         if (newState == PowerState.Boot)
@@ -52,11 +79,8 @@ public class MenuPowerController : MonoBehaviour
             if (whiteLightRoot) whiteLightRoot.SetActive(true);
             if (emergencyLightRoot) emergencyLightRoot.SetActive(false);
 
-            if (generatorLoop)
-            {
-                generatorLoop.loop = true;
-                if (!generatorLoop.isPlaying) generatorLoop.Play();
-            }
+            SetLoop(generatorLoop, true);
+            SetLoop(tubeHumLoop, true);
         }
         // PowerOff: todo apagado + oscuridad + menu sigue
         else if (newState == PowerState.PowerOff)
@@ -67,7 +91,8 @@ public class MenuPowerController : MonoBehaviour
             if (whiteLightRoot) whiteLightRoot.SetActive(false);
             if (emergencyLightRoot) emergencyLightRoot.SetActive(false);
 
-            if (generatorLoop && generatorLoop.isPlaying) generatorLoop.Stop();
+            SetLoop(generatorLoop, false);
+            SetLoop(tubeHumLoop, false);
         }
         // Emergency: luces rojas + sin menu + arrancar juego una sola vez
         else if (newState == PowerState.Emergency)
@@ -75,9 +100,10 @@ public class MenuPowerController : MonoBehaviour
             if (darkOverlay) darkOverlay.SetActive(false);
             if (leverRoot) leverRoot.SetActive(false);
             if (whiteLightRoot) whiteLightRoot.SetActive(false);
-            if (emergencyLightRoot) emergencyLightRoot.SetActive(true);
+            StartCoroutine(EnableEmergencyLightsWithDelay());
 
-            if (generatorLoop && generatorLoop.isPlaying) generatorLoop.Stop();
+            SetLoop(generatorLoop, false);
+            SetLoop(tubeHumLoop, false);
 
             if (menuCanvas) menuCanvas.SetActive(false);
 
@@ -87,5 +113,31 @@ public class MenuPowerController : MonoBehaviour
                 OnGameStart?.Invoke();
             }
         }
+    }
+    private System.Collections.IEnumerator EnableEmergencyLightsWithDelay()
+    {
+        yield return new WaitForSeconds(emergencyLightsDelay);
+
+        if (emergencyLightRoot)
+            emergencyLightRoot.SetActive(true);
+    }
+    private void SetLoop(AudioSource src, bool on)
+    {
+    if (!src) return;
+    src.loop = true;
+
+    if (on)
+    {
+        if (!src.isPlaying)
+        {
+            src.time = 0f;
+            src.Play();
+        }
+    }
+    else
+    {
+        if (src.isPlaying)
+            src.Stop();
+    }
     }
 }

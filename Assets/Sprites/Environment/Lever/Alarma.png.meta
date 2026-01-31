@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0f55e89e0919ba408fc7727cd4fc31b
+guid: 03d1c39a68212ea469ef85e3ac3b122b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3688068118528598168
-    second: PjsTrim_0
+      213: 7685875567194330699
+    second: Alarma_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5082659, y: 0.49507633}
-  spritePixelsToUnits: 64
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PjsTrim_0
+      name: Alarma_0
       rect:
         serializedVersion: 2
-        x: 235
-        y: 20
-        width: 329
-        height: 932
+        x: 1685
+        y: 1744
+        width: 60
+        height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86fd8af169951dcc0800000000000000
-      internalID: -3688068118528598168
+      spriteID: b46d87a5b17b9aa60800000000000000
+      internalID: 7685875567194330699
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9f651c1bd6c050644a809c38bb0a6371
-    internalID: 971782439
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PjsTrim_0: -3688068118528598168
+      Alarma_0: 7685875567194330699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
